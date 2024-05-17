@@ -1,0 +1,33 @@
+[1.283s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
+[1.550s] running egg_info
+[1.550s] creating ../../build/my_python_pkg/my_python_pkg.egg-info
+[1.550s] writing ../../build/my_python_pkg/my_python_pkg.egg-info/PKG-INFO
+[1.550s] writing dependency_links to ../../build/my_python_pkg/my_python_pkg.egg-info/dependency_links.txt
+[1.550s] writing entry points to ../../build/my_python_pkg/my_python_pkg.egg-info/entry_points.txt
+[1.550s] writing requirements to ../../build/my_python_pkg/my_python_pkg.egg-info/requires.txt
+[1.550s] writing top-level names to ../../build/my_python_pkg/my_python_pkg.egg-info/top_level.txt
+[1.550s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[1.552s] reading manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[1.553s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[1.553s] running build
+[1.553s] running build_py
+[1.554s] creating /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build
+[1.554s] creating /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib
+[1.554s] creating /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[1.554s] copying my_python_pkg/__init__.py -> /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[1.554s] running install
+[1.555s] running install_lib
+[1.560s] creating /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[1.560s] copying /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg/__init__.py -> /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[1.560s] byte-compiling /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/__init__.py to __init__.cpython-310.pyc
+[1.560s] running install_data
+[1.560s] creating /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/share/ament_index
+[1.561s] creating /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/share/ament_index/resource_index
+[1.561s] creating /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/share/ament_index/resource_index/packages
+[1.561s] copying resource/my_python_pkg -> /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/share/ament_index/resource_index/packages
+[1.561s] copying package.xml -> /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/share/my_python_pkg
+[1.561s] running install_egg_info
+[1.561s] Copying ../../build/my_python_pkg/my_python_pkg.egg-info to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info
+[1.561s] running install_scripts
+[1.584s] writing list of installed files to '/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log'
+[1.610s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg' returned '0': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
