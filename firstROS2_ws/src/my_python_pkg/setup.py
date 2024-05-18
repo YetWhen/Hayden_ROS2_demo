@@ -20,6 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "py_node1 = my_python_pkg.first_py_node:main"
         ],
     },
 )
+# to add script to ros2 ws, check the entry_points -> console_scripts[string]
+# format is 
+#"<desired_node_name> = <folder.folder. till script file>.<script>:<function to start with>"
+# this will transform script to ros2 executable, add to install 

@@ -1,0 +1,21 @@
+[0.692s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
+[0.972s] running egg_info
+[0.973s] writing ../../build/my_python_pkg/my_python_pkg.egg-info/PKG-INFO
+[0.974s] writing dependency_links to ../../build/my_python_pkg/my_python_pkg.egg-info/dependency_links.txt
+[0.974s] writing entry points to ../../build/my_python_pkg/my_python_pkg.egg-info/entry_points.txt
+[0.975s] writing requirements to ../../build/my_python_pkg/my_python_pkg.egg-info/requires.txt
+[0.976s] writing top-level names to ../../build/my_python_pkg/my_python_pkg.egg-info/top_level.txt
+[0.978s] reading manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.978s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.979s] running build
+[0.979s] running build_py
+[0.979s] running install
+[0.980s] running install_lib
+[0.981s] running install_data
+[0.981s] running install_egg_info
+[0.983s] removing '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.990s] Copying ../../build/my_python_pkg/my_python_pkg.egg-info to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info
+[0.995s] running install_scripts
+[1.016s] Installing py_node1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.016s] writing list of installed files to '/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log'
+[1.052s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg' returned '0': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
