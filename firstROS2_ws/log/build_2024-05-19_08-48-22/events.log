@@ -1,0 +1,127 @@
+[0.000000] (-) TimerEvent: {}
+[0.001406] (-) JobUnselected: {'identifier': 'my_python_pkg'}
+[0.001511] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.001538] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.023211] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.027497] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.029340] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', '--', '-j6', '-l6'], 'cwd': '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hayden'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hayden'), ('OLDPWD', '/home/hayden/ROS2_demo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3083'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hayden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hayden'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hayden-VirtualBox:@/tmp/.ICE-unix/1426,unix/hayden-VirtualBox:/tmp/.ICE-unix/1426'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fd2e8501_8a62_4e60_8431_4e4febfd0cfc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AXX1N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble')]), 'shell': False}
+[0.071823] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100480] (-) TimerEvent: {}
+[0.201479] (-) TimerEvent: {}
+[0.211117] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.239222] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.241395] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.247610] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.260861] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.275663] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.306200] (-) TimerEvent: {}
+[0.338744] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.340131] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.412661] (-) TimerEvent: {}
+[0.463935] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.526026] (-) TimerEvent: {}
+[0.627661] (-) TimerEvent: {}
+[0.645983] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.720041] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.720221] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.720286] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.720672] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.721517] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.721671] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.722309] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.722900] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.728222] (-) TimerEvent: {}
+[0.830960] (-) TimerEvent: {}
+[0.871504] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.882609] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg\n'}
+[0.931897] (-) TimerEvent: {}
+[0.945222] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node1.dir/src/first_cpp_node.cpp.o\x1b[0m\n'}
+[1.032247] (-) TimerEvent: {}
+[1.146600] (-) TimerEvent: {}
+[1.278920] (-) TimerEvent: {}
+[1.382761] (-) TimerEvent: {}
+[1.493861] (-) TimerEvent: {}
+[1.595777] (-) TimerEvent: {}
+[1.708322] (-) TimerEvent: {}
+[1.817007] (-) TimerEvent: {}
+[1.924355] (-) TimerEvent: {}
+[2.039128] (-) TimerEvent: {}
+[2.159430] (-) TimerEvent: {}
+[2.259898] (-) TimerEvent: {}
+[2.361495] (-) TimerEvent: {}
+[2.462986] (-) TimerEvent: {}
+[2.563550] (-) TimerEvent: {}
+[2.674598] (-) TimerEvent: {}
+[2.775136] (-) TimerEvent: {}
+[2.876290] (-) TimerEvent: {}
+[2.977910] (-) TimerEvent: {}
+[3.080331] (-) TimerEvent: {}
+[3.187760] (-) TimerEvent: {}
+[3.288161] (-) TimerEvent: {}
+[3.389119] (-) TimerEvent: {}
+[3.503728] (-) TimerEvent: {}
+[3.613717] (-) TimerEvent: {}
+[3.727475] (-) TimerEvent: {}
+[3.828257] (-) TimerEvent: {}
+[3.928895] (-) TimerEvent: {}
+[4.031457] (-) TimerEvent: {}
+[4.133494] (-) TimerEvent: {}
+[4.246128] (-) TimerEvent: {}
+[4.348841] (-) TimerEvent: {}
+[4.457212] (-) TimerEvent: {}
+[4.575727] (-) TimerEvent: {}
+[4.676181] (-) TimerEvent: {}
+[4.782265] (-) TimerEvent: {}
+[4.894299] (-) TimerEvent: {}
+[5.000543] (-) TimerEvent: {}
+[5.117573] (-) TimerEvent: {}
+[5.219174] (-) TimerEvent: {}
+[5.320363] (-) TimerEvent: {}
+[5.420846] (-) TimerEvent: {}
+[5.528626] (-) TimerEvent: {}
+[5.629472] (-) TimerEvent: {}
+[5.730518] (-) TimerEvent: {}
+[5.831786] (-) TimerEvent: {}
+[5.932630] (-) TimerEvent: {}
+[6.050264] (-) TimerEvent: {}
+[6.150854] (-) TimerEvent: {}
+[6.254979] (-) TimerEvent: {}
+[6.355437] (-) TimerEvent: {}
+[6.358767] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_node1\x1b[0m\n'}
+[6.456198] (-) TimerEvent: {}
+[6.570894] (-) TimerEvent: {}
+[6.671916] (-) TimerEvent: {}
+[6.772577] (-) TimerEvent: {}
+[6.874845] (-) TimerEvent: {}
+[6.975690] (-) TimerEvent: {}
+[7.081759] (-) TimerEvent: {}
+[7.183056] (-) TimerEvent: {}
+[7.283956] (-) TimerEvent: {}
+[7.384455] (-) TimerEvent: {}
+[7.399680] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target cpp_node1\n'}
+[7.426744] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.487255] (-) TimerEvent: {}
+[7.501059] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[7.514554] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'], 'cwd': '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hayden'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hayden'), ('OLDPWD', '/home/hayden/ROS2_demo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3083'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hayden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hayden'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hayden-VirtualBox:@/tmp/.ICE-unix/1426,unix/hayden-VirtualBox:/tmp/.ICE-unix/1426'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fd2e8501_8a62_4e60_8431_4e4febfd0cfc'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.AXX1N2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble')]), 'shell': False}
+[7.524565] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.525012] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node1\n'}
+[7.525686] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node1" to ""\n'}
+[7.525825] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[7.525900] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[7.526334] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[7.526442] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[7.526993] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[7.527250] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[7.527632] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[7.527801] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[7.527876] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[7.528056] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[7.528294] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[7.528358] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[7.528418] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[7.528474] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[7.528529] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[7.530658] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[7.587856] (-) TimerEvent: {}
+[7.630510] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[7.631533] (-) EventReactorShutdown: {}

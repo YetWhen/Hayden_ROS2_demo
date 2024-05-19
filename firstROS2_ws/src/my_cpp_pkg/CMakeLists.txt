@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(my_cpp_pkg)
+project(my_cpp_pkg) #project(PROJECT_NAME)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -21,4 +21,18 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+#============= no update above ====================
+#this following line is added to create an executable
+#add_executable(<name_of_exe> <address towards cpp file starting from CMakeLists.txt file's level)
+add_executable(cpp_node1 src/first_cpp_node.cpp)
+#the following line links the builder, ament, with the dependencies,libraries needed
+#ament_target_dependencies(<name_of_exe> <dependency>)
+#<dependency> refer to the '#find dependencies' section, starting from line 8
+ament_target_dependencies(cpp_node1 rclcpp)
+#this will install the executable created to the folder specified
+#install(TARGET <name_of_exe> DESTINATION <address>)
+#<address> counts from ros_workspace_folder/install, ends with folder name storing exe
+install(TARGETS cpp_node1
+  DESTINATION lib/${PROJECT_NAME}
+)
 ament_package()
