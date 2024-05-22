@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(example_interfaces REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -21,18 +22,22 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-#============= no update above ====================
+#=================================
 #this following line is added to create an executable
 #add_executable(<name_of_exe> <address towards cpp file starting from CMakeLists.txt file's level)
 add_executable(cpp_node1 src/first_cpp_node.cpp)
+add_executable(cpp_publisher1 src/cpp_publisher.cpp)
+add_executable(cpp_subscriber1 src/cpp_subscriber.cpp)
 #the following line links the builder, ament, with the dependencies,libraries needed
 #ament_target_dependencies(<name_of_exe> <dependency>)
 #<dependency> refer to the '#find dependencies' section, starting from line 8
 ament_target_dependencies(cpp_node1 rclcpp)
+ament_target_dependencies(cpp_publisher1 rclcpp example_interfaces)
+ament_target_dependencies(cpp_subscriber1 rclcpp example_interfaces)
 #this will install the executable created to the folder specified
 #install(TARGET <name_of_exe> DESTINATION <address>)
 #<address> counts from ros_workspace_folder/install, ends with folder name storing exe
-install(TARGETS cpp_node1
+install(TARGETS cpp_node1 cpp_publisher1 cpp_subscriber1
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()
