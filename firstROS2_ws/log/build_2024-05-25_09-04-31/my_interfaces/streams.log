@@ -1,0 +1,60 @@
+[0.014s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces': /usr/bin/cmake /home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/firstROS2_ws/install/my_interfaces
+[0.940s] -- The C compiler identification is GNU 11.4.0
+[1.154s] -- The CXX compiler identification is GNU 11.4.0
+[1.178s] -- Detecting C compiler ABI info
+[1.401s] -- Detecting C compiler ABI info - done
+[1.429s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.433s] -- Detecting C compile features
+[1.447s] -- Detecting C compile features - done
+[1.454s] -- Detecting CXX compiler ABI info
+[1.620s] -- Detecting CXX compiler ABI info - done
+[1.628s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.628s] -- Detecting CXX compile features
+[1.628s] -- Detecting CXX compile features - done
+[1.671s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.863s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.023s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.030s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.055s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.461s] Error parsing '/home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces/package.xml':
+[2.521s] Traceback (most recent call last):
+[2.521s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string
+[2.539s]     root = dom.parseString(data)
+[2.539s]   File "/usr/lib/python3.10/xml/dom/minidom.py", line 2000, in parseString
+[2.557s]     return expatbuilder.parseString(string)
+[2.557s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 925, in parseString
+[2.572s]     return builder.parseString(string)
+[2.572s]   File "/usr/lib/python3.10/xml/dom/expatbuilder.py", line 223, in parseString
+[2.572s]     parser.Parse(string, True)
+[2.573s] xml.parsers.expat.ExpatError: mismatched tag: line 14, column 46
+[2.573s] 
+[2.573s] During handling of the above exception, another exception occurred:
+[2.573s] 
+[2.573s] Traceback (most recent call last):
+[2.573s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[2.573s]     main()
+[2.574s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[2.574s]     raise e
+[2.574s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[2.574s]     package = parse_package_string(
+[2.574s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string
+[2.574s]     raise InvalidPackage('The manifest contains invalid XML:\n%s' % ex, filename)
+[2.574s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces/package.xml':
+[2.574s] The manifest contains invalid XML:
+[2.574s] mismatched tag: line 14, column 46
+[2.609s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[2.610s]   execute_process(/usr/bin/python3
+[2.610s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[2.610s]   /home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces/package.xml
+[2.610s]   /home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/ament_cmake_core/package.cmake)
+[2.610s]   returned error code 1
+[2.610s] Call Stack (most recent call first):
+[2.610s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[2.610s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)
+[2.610s]   CMakeLists.txt:12 (rosidl_generate_interfaces)
+[2.610s] 
+[2.610s] [0m
+[2.610s] -- Configuring incomplete, errors occurred!
+[2.611s] See also "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/CMakeFiles/CMakeOutput.log".
+[2.621s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces' returned '1': /usr/bin/cmake /home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/firstROS2_ws/install/my_interfaces
