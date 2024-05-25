@@ -1,0 +1,32 @@
+[0.707s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data
+[0.962s] running egg_info
+[0.963s] writing ../../build/my_python_pkg/my_python_pkg.egg-info/PKG-INFO
+[0.965s] writing dependency_links to ../../build/my_python_pkg/my_python_pkg.egg-info/dependency_links.txt
+[0.965s] writing entry points to ../../build/my_python_pkg/my_python_pkg.egg-info/entry_points.txt
+[0.965s] writing requirements to ../../build/my_python_pkg/my_python_pkg.egg-info/requires.txt
+[0.965s] writing top-level names to ../../build/my_python_pkg/my_python_pkg.egg-info/top_level.txt
+[0.967s] reading manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.967s] writing manifest file '../../build/my_python_pkg/my_python_pkg.egg-info/SOURCES.txt'
+[0.968s] running build
+[0.968s] running build_py
+[0.968s] copying my_python_pkg/py_client.py -> /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.969s] copying my_python_pkg/py_oop_client.py -> /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg
+[0.969s] running install
+[0.969s] running install_lib
+[0.970s] copying /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg/py_client.py -> /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.970s] copying /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build/lib/my_python_pkg/py_oop_client.py -> /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg
+[0.971s] byte-compiling /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/py_client.py to py_client.cpython-310.pyc
+[0.972s] byte-compiling /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg/py_oop_client.py to py_oop_client.cpython-310.pyc
+[0.979s] running install_data
+[0.979s] running install_egg_info
+[0.981s] removing '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.987s] Copying ../../build/my_python_pkg/my_python_pkg.egg-info to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages/my_python_pkg-0.0.0-py3.10.egg-info
+[0.987s] running install_scripts
+[1.009s] Installing py_client1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.011s] Installing py_node1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.011s] Installing py_oop_client1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.012s] Installing py_publisher1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.012s] Installing py_server1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.012s] Installing py_subscriber1 script to /home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/my_python_pkg
+[1.012s] writing list of installed files to '/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log'
+[1.043s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/src/my_python_pkg' returned '0': PYTHONPATH=/home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/prefix_override:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_python_pkg build --build-base /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/build install --record /home/hayden/ROS2_demo/firstROS2_ws/build/my_python_pkg/install.log --single-version-externally-managed install_data

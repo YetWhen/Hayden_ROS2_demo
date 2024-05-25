@@ -10,7 +10,10 @@ setup.py
 ../../build/my_python_pkg/my_python_pkg.egg-info/zip-safe
 my_python_pkg/__init__.py
 my_python_pkg/first_py_node.py
+my_python_pkg/py_client.py
+my_python_pkg/py_oop_client.py
 my_python_pkg/py_publisher.py
+my_python_pkg/py_server.py
 my_python_pkg/py_subscriber.py
 resource/my_python_pkg
 test/test_copyright.py

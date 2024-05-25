@@ -23,6 +23,9 @@ setup(
             "py_node1 = my_python_pkg.first_py_node:main",
             "py_publisher1 = my_python_pkg.py_publisher:main",
             "py_subscriber1 = my_python_pkg.py_subscriber:main",
+            "py_server1 = my_python_pkg.py_server:main",
+            "py_client1 = my_python_pkg.py_client:main",
+            "py_oop_client1 = my_python_pkg.py_oop_client:main",
         ],
     },
 )
