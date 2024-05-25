@@ -1,0 +1,232 @@
+[0.000000] (-) TimerEvent: {}
+[0.000279] (-) JobUnselected: {'identifier': 'my_python_pkg'}
+[0.000376] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000402] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.013195] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.035801] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.035922] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', '--', '-j6', '-l6'], 'cwd': '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hayden'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hayden'), ('OLDPWD', '/home/hayden/ROS2_demo/firstROS2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4939'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hayden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hayden'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hayden-VirtualBox:@/tmp/.ICE-unix/2580,unix/hayden-VirtualBox:/tmp/.ICE-unix/2580'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/382210a8_06cc_4626_9300_7041bc162986'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Z8BSO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble')]), 'shell': False}
+[0.097456] (-) TimerEvent: {}
+[0.198412] (-) TimerEvent: {}
+[0.298945] (-) TimerEvent: {}
+[0.401216] (-) TimerEvent: {}
+[0.504763] (-) TimerEvent: {}
+[0.605615] (-) TimerEvent: {}
+[0.706966] (-) TimerEvent: {}
+[0.810285] (-) TimerEvent: {}
+[0.844779] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.926200] (-) TimerEvent: {}
+[1.086625] (-) TimerEvent: {}
+[1.188030] (-) TimerEvent: {}
+[1.289233] (-) TimerEvent: {}
+[1.354038] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.389508] (-) TimerEvent: {}
+[1.490285] (-) TimerEvent: {}
+[1.591093] (-) TimerEvent: {}
+[1.644204] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.661056] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.685211] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.691492] (-) TimerEvent: {}
+[1.759918] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.794729] (-) TimerEvent: {}
+[1.890333] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.895528] (-) TimerEvent: {}
+[1.996163] (-) TimerEvent: {}
+[2.097691] (-) TimerEvent: {}
+[2.184773] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.198618] (-) TimerEvent: {}
+[2.222894] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.299458] (-) TimerEvent: {}
+[2.402147] (-) TimerEvent: {}
+[2.506040] (-) TimerEvent: {}
+[2.597743] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.606361] (-) TimerEvent: {}
+[2.707714] (-) TimerEvent: {}
+[2.808217] (-) TimerEvent: {}
+[2.922770] (-) TimerEvent: {}
+[3.052396] (-) TimerEvent: {}
+[3.095428] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[3.160917] (-) TimerEvent: {}
+[3.261834] (-) TimerEvent: {}
+[3.362955] (-) TimerEvent: {}
+[3.383384] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.495449] (-) TimerEvent: {}
+[3.596531] (-) TimerEvent: {}
+[3.633134] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.633543] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.633633] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.636452] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.639477] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.639661] (my_cpp_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.641172] (my_cpp_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.647764] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.697087] (-) TimerEvent: {}
+[3.797595] (-) TimerEvent: {}
+[3.806376] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[3.809737] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg\n'}
+[3.873935] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node1\x1b[0m\n'}
+[3.874451] (my_cpp_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/cpp_server1.dir/src/cpp_server.cpp.o\x1b[0m\n'}
+[3.888600] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_subscriber1\x1b[0m\n'}
+[3.898525] (-) TimerEvent: {}
+[3.903545] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_publisher1\x1b[0m\n'}
+[3.906791] (my_cpp_pkg) StdoutLine: {'line': b'[ 37%] Built target cpp_node1\n'}
+[3.916922] (my_cpp_pkg) StdoutLine: {'line': b'[ 62%] Built target cpp_subscriber1\n'}
+[3.942685] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] Built target cpp_publisher1\n'}
+[3.998741] (-) TimerEvent: {}
+[4.194352] (-) TimerEvent: {}
+[4.295112] (-) TimerEvent: {}
+[4.396088] (-) TimerEvent: {}
+[4.496772] (-) TimerEvent: {}
+[4.597669] (-) TimerEvent: {}
+[4.698911] (-) TimerEvent: {}
+[4.816366] (-) TimerEvent: {}
+[4.917355] (-) TimerEvent: {}
+[5.018518] (-) TimerEvent: {}
+[5.119582] (-) TimerEvent: {}
+[5.220376] (-) TimerEvent: {}
+[5.323818] (-) TimerEvent: {}
+[5.424537] (-) TimerEvent: {}
+[5.526338] (-) TimerEvent: {}
+[5.629251] (-) TimerEvent: {}
+[5.730302] (-) TimerEvent: {}
+[5.843597] (-) TimerEvent: {}
+[5.957112] (-) TimerEvent: {}
+[6.057705] (-) TimerEvent: {}
+[6.158588] (-) TimerEvent: {}
+[6.259837] (-) TimerEvent: {}
+[6.360212] (-) TimerEvent: {}
+[6.461611] (-) TimerEvent: {}
+[6.572047] (-) TimerEvent: {}
+[6.675544] (-) TimerEvent: {}
+[6.777793] (-) TimerEvent: {}
+[6.878434] (-) TimerEvent: {}
+[6.986161] (-) TimerEvent: {}
+[7.103822] (-) TimerEvent: {}
+[7.205112] (-) TimerEvent: {}
+[7.216620] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[7.216811] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[7.216880] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[7.216941] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[7.217006] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[7.217158] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[7.217231] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[7.217288] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[7.217342] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[7.217403] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[7.217457] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[7.217509] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:5\x1b[m\x1b[K:\n'}
+[7.217579] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid AddTwoIntsServerNode::callbackAddTwoInts(example_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::SharedPtr, example_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.217638] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_a_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.217704] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),\x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, \x1b[32m\x1b[Krequest->a\x1b[m\x1b[K, request->b, response->sum);\n'}
+[7.217759] (my_cpp_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.217818] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[7.217871] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_a_type {aka long int}\x1b[m\x1b[K\n'}
+[7.232893] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[7.233052] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),"\x1b[01;36m\x1b[K%d\x1b[m\x1b[K + %d = %d", request->a, request->b, response->sum);\n'}
+[7.233209] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[7.233349] (my_cpp_pkg) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[7.233491] (my_cpp_pkg) StderrLine: {'line': b'      |                                          \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[7.233633] (my_cpp_pkg) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[7.233777] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[7.234014] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[7.234090] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[7.234146] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[7.234199] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[7.234251] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[7.234302] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[7.234354] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[7.234405] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[7.234611] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[7.234801] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[7.234856] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:5\x1b[m\x1b[K:\n'}
+[7.234918] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_b_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.234982] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),\x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, request->a, \x1b[32m\x1b[Krequest->b\x1b[m\x1b[K, response->sum);\n'}
+[7.235035] (my_cpp_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K              \x1b[32m\x1b[K~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.235089] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                             \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[7.235141] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                             \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Request_<std::allocator<void> >::_b_type {aka long int}\x1b[m\x1b[K\n'}
+[7.235193] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[7.235246] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),"%d + \x1b[01;36m\x1b[K%d\x1b[m\x1b[K = %d", request->a, request->b, response->sum);\n'}
+[7.235303] (my_cpp_pkg) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[7.235356] (my_cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[7.235407] (my_cpp_pkg) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[7.235457] (my_cpp_pkg) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[7.235508] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[7.235559] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[7.235610] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[7.235975] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[7.236047] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[7.236102] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[7.236165] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[7.236221] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[7.236274] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[7.236326] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[7.236377] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[7.236428] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:5\x1b[m\x1b[K:\n'}
+[7.236479] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 7 has type \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::_sum_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.236535] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),\x1b[01;35m\x1b[K"%d + %d = %d"\x1b[m\x1b[K, request->a, request->b, \x1b[32m\x1b[Kresponse->sum\x1b[m\x1b[K);\n'}
+[7.236587] (my_cpp_pkg) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K                          \x1b[32m\x1b[K~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.236674] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                          \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[7.236733] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                          \x1b[32m\x1b[Kexample_interfaces::srv::AddTwoInts_Response_<std::allocator<void> >::_sum_type {aka long int}\x1b[m\x1b[K\n'}
+[7.236788] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hayden/ROS2_demo/firstROS2_ws/src/my_cpp_pkg/src/cpp_server.cpp:32:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[7.236842] (my_cpp_pkg) StderrLine: {'line': b'   32 |         RCLCPP_INFO(this->get_logger(),"%d + %d = \x1b[01;36m\x1b[K%d\x1b[m\x1b[K", request->a, request->b, response->sum);\n'}
+[7.236902] (my_cpp_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[7.236954] (my_cpp_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[7.237005] (my_cpp_pkg) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[7.237057] (my_cpp_pkg) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[7.306902] (-) TimerEvent: {}
+[7.421185] (-) TimerEvent: {}
+[7.521898] (-) TimerEvent: {}
+[7.641838] (-) TimerEvent: {}
+[7.742433] (-) TimerEvent: {}
+[7.846524] (-) TimerEvent: {}
+[7.947118] (-) TimerEvent: {}
+[8.051523] (-) TimerEvent: {}
+[8.165401] (-) TimerEvent: {}
+[8.265989] (-) TimerEvent: {}
+[8.366950] (-) TimerEvent: {}
+[8.467328] (-) TimerEvent: {}
+[8.568230] (-) TimerEvent: {}
+[8.669286] (-) TimerEvent: {}
+[8.772469] (-) TimerEvent: {}
+[8.873047] (-) TimerEvent: {}
+[8.974495] (-) TimerEvent: {}
+[9.000466] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cpp_server1\x1b[0m\n'}
+[9.076238] (-) TimerEvent: {}
+[9.177175] (-) TimerEvent: {}
+[9.302441] (-) TimerEvent: {}
+[9.403489] (-) TimerEvent: {}
+[9.524752] (-) TimerEvent: {}
+[9.626672] (-) TimerEvent: {}
+[9.727794] (-) TimerEvent: {}
+[9.828319] (-) TimerEvent: {}
+[9.902739] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target cpp_server1\n'}
+[9.926922] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[9.936628] (-) TimerEvent: {}
+[10.042238] (-) TimerEvent: {}
+[10.049359] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[10.065135] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'], 'cwd': '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'hayden'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/hayden'), ('OLDPWD', '/home/hayden/ROS2_demo/firstROS2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '4939'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'hayden'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hayden'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/hayden-VirtualBox:@/tmp/.ICE-unix/2580,unix/hayden-VirtualBox:/tmp/.ICE-unix/2580'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/382210a8_06cc_4626_9300_7041bc162986'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Z8BSO2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble')]), 'shell': False}
+[10.088711] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.110120] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node1\n'}
+[10.137606] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_publisher1\n'}
+[10.142965] (-) TimerEvent: {}
+[10.147605] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber1\n'}
+[10.147936] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_server1\n'}
+[10.149146] (my_cpp_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_server1" to ""\n'}
+[10.149271] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[10.149338] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[10.149433] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[10.149515] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[10.149587] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[10.149791] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[10.149891] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[10.149953] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[10.150141] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[10.150200] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[10.150306] (my_cpp_pkg) StdoutLine: {'line': b'-- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[10.150381] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[10.150437] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[10.150533] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[10.150605] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[10.153528] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[10.243708] (-) TimerEvent: {}
+[10.302212] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[10.305308] (-) EventReactorShutdown: {}

@@ -28,16 +28,28 @@ endif()
 add_executable(cpp_node1 src/first_cpp_node.cpp)
 add_executable(cpp_publisher1 src/cpp_publisher.cpp)
 add_executable(cpp_subscriber1 src/cpp_subscriber.cpp)
+add_executable(cpp_server1 src/cpp_server.cpp)
+add_executable(cpp_client1 src/cpp_client.cpp)
+add_executable(cpp_oop_client1 src/cpp_oop_client.cpp)
 #the following line links the builder, ament, with the dependencies,libraries needed
 #ament_target_dependencies(<name_of_exe> <dependency>)
 #<dependency> refer to the '#find dependencies' section, starting from line 8
 ament_target_dependencies(cpp_node1 rclcpp)
 ament_target_dependencies(cpp_publisher1 rclcpp example_interfaces)
 ament_target_dependencies(cpp_subscriber1 rclcpp example_interfaces)
+ament_target_dependencies(cpp_server1 rclcpp example_interfaces)
+ament_target_dependencies(cpp_client1 rclcpp example_interfaces)
+ament_target_dependencies(cpp_oop_client1 rclcpp example_interfaces)
+
 #this will install the executable created to the folder specified
 #install(TARGET <name_of_exe> DESTINATION <address>)
 #<address> counts from ros_workspace_folder/install, ends with folder name storing exe
-install(TARGETS cpp_node1 cpp_publisher1 cpp_subscriber1
-  DESTINATION lib/${PROJECT_NAME}
+install(TARGETS cpp_node1 
+                cpp_publisher1 
+                cpp_subscriber1 
+                cpp_server1
+                cpp_client1
+                cpp_oop_client1
+        DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

@@ -236,6 +236,93 @@ cpp_subscriber1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_subscriber1.dir/build.make CMakeFiles/cpp_subscriber1.dir/build
 .PHONY : cpp_subscriber1/fast
 
+#=============================================================================
+# Target rules for targets named cpp_server1
+
+# Build rule for target.
+cpp_server1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_server1
+.PHONY : cpp_server1
+
+# fast build rule for target.
+cpp_server1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_server1.dir/build.make CMakeFiles/cpp_server1.dir/build
+.PHONY : cpp_server1/fast
+
+#=============================================================================
+# Target rules for targets named cpp_client1
+
+# Build rule for target.
+cpp_client1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_client1
+.PHONY : cpp_client1
+
+# fast build rule for target.
+cpp_client1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_client1.dir/build.make CMakeFiles/cpp_client1.dir/build
+.PHONY : cpp_client1/fast
+
+#=============================================================================
+# Target rules for targets named cpp_oop_client1
+
+# Build rule for target.
+cpp_oop_client1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_oop_client1
+.PHONY : cpp_oop_client1
+
+# fast build rule for target.
+cpp_oop_client1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_oop_client1.dir/build.make CMakeFiles/cpp_oop_client1.dir/build
+.PHONY : cpp_oop_client1/fast
+
+src/cpp_client.o: src/cpp_client.cpp.o
+.PHONY : src/cpp_client.o
+
+# target to build an object file
+src/cpp_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_client1.dir/build.make CMakeFiles/cpp_client1.dir/src/cpp_client.cpp.o
+.PHONY : src/cpp_client.cpp.o
+
+src/cpp_client.i: src/cpp_client.cpp.i
+.PHONY : src/cpp_client.i
+
+# target to preprocess a source file
+src/cpp_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_client1.dir/build.make CMakeFiles/cpp_client1.dir/src/cpp_client.cpp.i
+.PHONY : src/cpp_client.cpp.i
+
+src/cpp_client.s: src/cpp_client.cpp.s
+.PHONY : src/cpp_client.s
+
+# target to generate assembly for a file
+src/cpp_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_client1.dir/build.make CMakeFiles/cpp_client1.dir/src/cpp_client.cpp.s
+.PHONY : src/cpp_client.cpp.s
+
+src/cpp_oop_client.o: src/cpp_oop_client.cpp.o
+.PHONY : src/cpp_oop_client.o
+
+# target to build an object file
+src/cpp_oop_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_oop_client1.dir/build.make CMakeFiles/cpp_oop_client1.dir/src/cpp_oop_client.cpp.o
+.PHONY : src/cpp_oop_client.cpp.o
+
+src/cpp_oop_client.i: src/cpp_oop_client.cpp.i
+.PHONY : src/cpp_oop_client.i
+
+# target to preprocess a source file
+src/cpp_oop_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_oop_client1.dir/build.make CMakeFiles/cpp_oop_client1.dir/src/cpp_oop_client.cpp.i
+.PHONY : src/cpp_oop_client.cpp.i
+
+src/cpp_oop_client.s: src/cpp_oop_client.cpp.s
+.PHONY : src/cpp_oop_client.s
+
+# target to generate assembly for a file
+src/cpp_oop_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_oop_client1.dir/build.make CMakeFiles/cpp_oop_client1.dir/src/cpp_oop_client.cpp.s
+.PHONY : src/cpp_oop_client.cpp.s
+
 src/cpp_publisher.o: src/cpp_publisher.cpp.o
 .PHONY : src/cpp_publisher.o
 
@@ -259,6 +346,30 @@ src/cpp_publisher.s: src/cpp_publisher.cpp.s
 src/cpp_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_publisher1.dir/build.make CMakeFiles/cpp_publisher1.dir/src/cpp_publisher.cpp.s
 .PHONY : src/cpp_publisher.cpp.s
+
+src/cpp_server.o: src/cpp_server.cpp.o
+.PHONY : src/cpp_server.o
+
+# target to build an object file
+src/cpp_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_server1.dir/build.make CMakeFiles/cpp_server1.dir/src/cpp_server.cpp.o
+.PHONY : src/cpp_server.cpp.o
+
+src/cpp_server.i: src/cpp_server.cpp.i
+.PHONY : src/cpp_server.i
+
+# target to preprocess a source file
+src/cpp_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_server1.dir/build.make CMakeFiles/cpp_server1.dir/src/cpp_server.cpp.i
+.PHONY : src/cpp_server.cpp.i
+
+src/cpp_server.s: src/cpp_server.cpp.s
+.PHONY : src/cpp_server.s
+
+# target to generate assembly for a file
+src/cpp_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_server1.dir/build.make CMakeFiles/cpp_server1.dir/src/cpp_server.cpp.s
+.PHONY : src/cpp_server.cpp.s
 
 src/cpp_subscriber.o: src/cpp_subscriber.cpp.o
 .PHONY : src/cpp_subscriber.o
@@ -323,12 +434,24 @@ help:
 	@echo "... test"
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... uninstall"
+	@echo "... cpp_client1"
 	@echo "... cpp_node1"
+	@echo "... cpp_oop_client1"
 	@echo "... cpp_publisher1"
+	@echo "... cpp_server1"
 	@echo "... cpp_subscriber1"
+	@echo "... src/cpp_client.o"
+	@echo "... src/cpp_client.i"
+	@echo "... src/cpp_client.s"
+	@echo "... src/cpp_oop_client.o"
+	@echo "... src/cpp_oop_client.i"
+	@echo "... src/cpp_oop_client.s"
 	@echo "... src/cpp_publisher.o"
 	@echo "... src/cpp_publisher.i"
 	@echo "... src/cpp_publisher.s"
+	@echo "... src/cpp_server.o"
+	@echo "... src/cpp_server.i"
+	@echo "... src/cpp_server.s"
 	@echo "... src/cpp_subscriber.o"
 	@echo "... src/cpp_subscriber.i"
 	@echo "... src/cpp_subscriber.s"

@@ -1,6 +1,9 @@
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node1
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_publisher1
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber1
+/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_server1
+/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_client1
+/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_oop_client1
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
 /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
