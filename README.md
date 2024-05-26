@@ -3,8 +3,8 @@ A repo for me to record ROS2 learning process and demonstration projects
 
 created at 2024/05/17  
 # Environment and system setup  
-UBUNTU 22.04 humble  
-ROS2  
+UBUNTU 22.04  Jammy Jellyfish  
+ROS2 humble  
 builder: ament, colcon  
 ## basic setup commands  
 The following commands shall be run everytime when a new shell or terminal window is opened.  
