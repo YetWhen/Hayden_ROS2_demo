@@ -1,0 +1,70 @@
+[0.024s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg -- -j6 -l6
+[0.061s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.241s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.275s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.277s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.285s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.316s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.380s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.381s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.506s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.678s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[0.843s] -- Found my_interfaces: 0.0.0 (/home/hayden/ROS2_demo/firstROS2_ws/install/my_interfaces/share/my_interfaces/cmake)
+[0.861s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.939s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.940s] -- Configured cppcheck include dirs: 
+[0.940s] -- Configured cppcheck exclude dirs and/or files: 
+[0.941s] -- Added test 'lint_cmake' to check CMake code style
+[0.942s] -- Added test 'uncrustify' to check C / C++ code style
+[0.942s] -- Configured uncrustify additional arguments: 
+[0.942s] -- Added test 'xmllint' to check XML markup files
+[0.943s] -- Configuring done
+[0.986s] -- Generating done
+[0.991s] -- Build files have been written to: /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg
+[1.031s] [35m[1mConsolidate compiler generated dependencies of target cpp_publisher1[0m
+[1.031s] [35m[1mConsolidate compiler generated dependencies of target cpp_subscriber1[0m
+[1.031s] [35m[1mConsolidate compiler generated dependencies of target cpp_node1[0m
+[1.032s] [35m[1mConsolidate compiler generated dependencies of target cpp_server1[0m
+[1.035s] [35m[1mConsolidate compiler generated dependencies of target cpp_oop_client1[0m
+[1.050s] [35m[1mConsolidate compiler generated dependencies of target cpp_client1[0m
+[1.072s] [ 14%] Built target cpp_node1
+[1.077s] [ 21%] [32mBuilding CXX object CMakeFiles/cpp_publisher1.dir/src/cpp_publisher.cpp.o[0m
+[1.081s] [ 35%] Built target cpp_subscriber1
+[1.083s] [ 50%] Built target cpp_client1
+[1.084s] [ 64%] Built target cpp_server1
+[1.086s] [ 78%] Built target cpp_oop_client1
+[1.091s] [35m[1mConsolidate compiler generated dependencies of target cpp_hardware_publisher1[0m
+[1.119s] [ 85%] [32mBuilding CXX object CMakeFiles/cpp_hardware_publisher1.dir/src/cpp_hardware_publisher.cpp.o[0m
+[9.494s] [ 92%] [32m[1mLinking CXX executable cpp_hardware_publisher1[0m
+[9.556s] [100%] [32m[1mLinking CXX executable cpp_publisher1[0m
+[9.745s] [100%] Built target cpp_hardware_publisher1
+[9.951s] [100%] Built target cpp_publisher1
+[9.978s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg -- -j6 -l6
+[10.171s] Invoking command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg
+[10.183s] -- Install configuration: ""
+[10.183s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node1
+[10.183s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_publisher1
+[10.185s] -- Set runtime path of "/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_publisher1" to ""
+[10.185s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_subscriber1
+[10.185s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_server1
+[10.186s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_client1
+[10.186s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_oop_client1
+[10.186s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_hardware_publisher1
+[10.188s] -- Set runtime path of "/home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_hardware_publisher1" to ""
+[10.188s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[10.189s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[10.189s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[10.189s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[10.189s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[10.189s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[10.190s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[10.190s] -- Installing: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[10.190s] -- Up-to-date: /home/hayden/ROS2_demo/firstROS2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[10.194s] Invoked command in '/home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/firstROS2_ws/build/my_cpp_pkg

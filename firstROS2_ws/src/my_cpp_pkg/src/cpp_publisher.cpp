@@ -16,9 +16,16 @@ public:
     RobotNewsStationNode() : Node("cpp_robot_news_station"), robot_name("CPP_Robot")
     {
         //this refer to the class inherited, the parent class Node
+        this->declare_parameter("number_to_publish", 2);
+        this->declare_parameter("publish_frequency", 1.0);
+        number_ = this->get_parameter("number_to_publish").as_int();
+        double publish_frequency = this->get_parameter("publish_frequency").as_double();
+
+        
         //note that the topic has the same name as python one, they'll publish to the same topic
         publisher_  = this->create_publisher<example_interfaces::msg::String>("robot_news",10);
-        timer_ = this->create_wall_timer(std::chrono::milliseconds(500), std::bind(&RobotNewsStationNode::publishNews, this));
+        timer_ = this->create_wall_timer(std::chrono::milliseconds((int) (1000.0/publish_frequency)), 
+                                        std::bind(&RobotNewsStationNode::publishNews, this));
 
         RCLCPP_INFO(this->get_logger(), "c++ publisher has been started");
     }
@@ -29,10 +36,13 @@ private:
     rclcpp::Publisher<example_interfaces::msg::String>::SharedPtr publisher_;
     std::string robot_name;
     rclcpp::TimerBase::SharedPtr timer_;
+    int number_;
     void publishNews()
     {
         auto msg = example_interfaces::msg::String();
-        msg.data = std::string("Hi, this is ") + robot_name + std::string(" from c++ publisher");
+        msg.data = std::string("Hi, this is ") + robot_name + 
+                    std::string(" from c++ publisher, with number ") + 
+                    std::to_string(number_);
         publisher_->publish(msg);
     }
 };

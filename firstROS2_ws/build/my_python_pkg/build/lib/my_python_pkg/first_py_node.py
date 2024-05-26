@@ -10,7 +10,10 @@ class MyNode(Node):
         #this will call/borrow the __init__() function (constructor) of Node in library
         #argument is the node name
         super().__init__("py_test_oop")
-        #the following can be split to child functions to be called in main()
+        #declare parameter of node, with default value of 2
+        self.declare_parameter("param_test", 2)
+        #to call the parameter self.get(parameter)
+        #print a line in log/terminal
         self.get_logger().info("[oop] Hello ROS2")
         #create_timer(wait time in sec, function to call)
         #the following will call timer_callback() every 0.5 sec, = 2Hz
