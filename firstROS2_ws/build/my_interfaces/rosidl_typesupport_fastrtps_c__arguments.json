@@ -3,7 +3,8 @@
   "output_dir": "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_typesupport_fastrtps_c/my_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces:msg/HardwareStatus.idl"
+    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces:msg/HardwareStatus.idl",
+    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces:srv/SampleService.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
@@ -14,6 +15,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces/msg/HardwareStatus.idl"
+    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces/msg/HardwareStatus.idl",
+    "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_adapter/my_interfaces/srv/SampleService.idl"
   ]
 }

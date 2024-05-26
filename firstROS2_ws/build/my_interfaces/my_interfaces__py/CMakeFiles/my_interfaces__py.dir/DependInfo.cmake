@@ -17,6 +17,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/__init__.py" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_hardware_status.py" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/msg/_hardware_status_s.c" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/__init__.py" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_sample_service.py" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_sample_service_s.c" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

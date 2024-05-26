@@ -275,6 +275,19 @@ cpp_oop_client1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_oop_client1.dir/build.make CMakeFiles/cpp_oop_client1.dir/build
 .PHONY : cpp_oop_client1/fast
 
+#=============================================================================
+# Target rules for targets named cpp_hardware_publisher1
+
+# Build rule for target.
+cpp_hardware_publisher1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpp_hardware_publisher1
+.PHONY : cpp_hardware_publisher1
+
+# fast build rule for target.
+cpp_hardware_publisher1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_hardware_publisher1.dir/build.make CMakeFiles/cpp_hardware_publisher1.dir/build
+.PHONY : cpp_hardware_publisher1/fast
+
 src/cpp_client.o: src/cpp_client.cpp.o
 .PHONY : src/cpp_client.o
 
@@ -298,6 +311,30 @@ src/cpp_client.s: src/cpp_client.cpp.s
 src/cpp_client.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_client1.dir/build.make CMakeFiles/cpp_client1.dir/src/cpp_client.cpp.s
 .PHONY : src/cpp_client.cpp.s
+
+src/cpp_hardware_publisher.o: src/cpp_hardware_publisher.cpp.o
+.PHONY : src/cpp_hardware_publisher.o
+
+# target to build an object file
+src/cpp_hardware_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_hardware_publisher1.dir/build.make CMakeFiles/cpp_hardware_publisher1.dir/src/cpp_hardware_publisher.cpp.o
+.PHONY : src/cpp_hardware_publisher.cpp.o
+
+src/cpp_hardware_publisher.i: src/cpp_hardware_publisher.cpp.i
+.PHONY : src/cpp_hardware_publisher.i
+
+# target to preprocess a source file
+src/cpp_hardware_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_hardware_publisher1.dir/build.make CMakeFiles/cpp_hardware_publisher1.dir/src/cpp_hardware_publisher.cpp.i
+.PHONY : src/cpp_hardware_publisher.cpp.i
+
+src/cpp_hardware_publisher.s: src/cpp_hardware_publisher.cpp.s
+.PHONY : src/cpp_hardware_publisher.s
+
+# target to generate assembly for a file
+src/cpp_hardware_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_hardware_publisher1.dir/build.make CMakeFiles/cpp_hardware_publisher1.dir/src/cpp_hardware_publisher.cpp.s
+.PHONY : src/cpp_hardware_publisher.cpp.s
 
 src/cpp_oop_client.o: src/cpp_oop_client.cpp.o
 .PHONY : src/cpp_oop_client.o
@@ -435,6 +472,7 @@ help:
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... cpp_client1"
+	@echo "... cpp_hardware_publisher1"
 	@echo "... cpp_node1"
 	@echo "... cpp_oop_client1"
 	@echo "... cpp_publisher1"
@@ -443,6 +481,9 @@ help:
 	@echo "... src/cpp_client.o"
 	@echo "... src/cpp_client.i"
 	@echo "... src/cpp_client.s"
+	@echo "... src/cpp_hardware_publisher.o"
+	@echo "... src/cpp_hardware_publisher.i"
+	@echo "... src/cpp_hardware_publisher.s"
 	@echo "... src/cpp_oop_client.o"
 	@echo "... src/cpp_oop_client.i"
 	@echo "... src/cpp_oop_client.s"

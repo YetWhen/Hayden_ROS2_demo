@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_interfaces/srv/SampleService.srv
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module srv {
+    struct SampleService_Request {
+      double a;
+
+      float b;
+
+      int8 c;
+
+      int16 d;
+
+      int64 e;
+
+      octet f;
+
+      boolean g;
+
+      uint8 h;
+    };
+    struct SampleService_Response {
+      uint8 i;
+
+      uint16 j;
+
+      uint32 k;
+
+      uint64 l;
+
+      string m;
+    };
+  };
+};

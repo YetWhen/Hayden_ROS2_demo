@@ -67,6 +67,9 @@ include CMakeFiles/my_interfaces.dir/compiler_depend.make
 include CMakeFiles/my_interfaces.dir/progress.make
 
 CMakeFiles/my_interfaces: /home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces/msg/HardwareStatus.msg
+CMakeFiles/my_interfaces: /home/hayden/ROS2_demo/firstROS2_ws/src/my_interfaces/srv/SampleService.srv
+CMakeFiles/my_interfaces: rosidl_cmake/srv/SampleService_Request.msg
+CMakeFiles/my_interfaces: rosidl_cmake/srv/SampleService_Response.msg
 
 my_interfaces: CMakeFiles/my_interfaces
 my_interfaces: CMakeFiles/my_interfaces.dir/build.make

@@ -4,9 +4,12 @@
             "name": "Linux",
             //include Path should be changed to cater to the ros distro installed
             //"/opt/ros/<DISTRO_YOU_USE>/include/**"
+            //for customized interfaces installed in workspace
+            //"<address to workspace>/install/<interface_pkg_name>/include"
             "includePath": [
                 "${workspaceFolder}/**",
-                "/opt/ros/humble/include/**"
+                "/opt/ros/humble/include/**",
+                "~/ROS2_demo/firstROS2_ws/install/my_interfaces/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

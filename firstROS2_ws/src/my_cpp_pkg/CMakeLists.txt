@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
+find_package(my_interfaces REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -31,6 +32,7 @@ add_executable(cpp_subscriber1 src/cpp_subscriber.cpp)
 add_executable(cpp_server1 src/cpp_server.cpp)
 add_executable(cpp_client1 src/cpp_client.cpp)
 add_executable(cpp_oop_client1 src/cpp_oop_client.cpp)
+add_executable(cpp_hardware_publisher1 src/cpp_hardware_publisher.cpp)
 #the following line links the builder, ament, with the dependencies,libraries needed
 #ament_target_dependencies(<name_of_exe> <dependency>)
 #<dependency> refer to the '#find dependencies' section, starting from line 8
@@ -40,6 +42,7 @@ ament_target_dependencies(cpp_subscriber1 rclcpp example_interfaces)
 ament_target_dependencies(cpp_server1 rclcpp example_interfaces)
 ament_target_dependencies(cpp_client1 rclcpp example_interfaces)
 ament_target_dependencies(cpp_oop_client1 rclcpp example_interfaces)
+ament_target_dependencies(cpp_hardware_publisher1 rclcpp my_interfaces)
 
 #this will install the executable created to the folder specified
 #install(TARGET <name_of_exe> DESTINATION <address>)
@@ -50,6 +53,7 @@ install(TARGETS cpp_node1
                 cpp_server1
                 cpp_client1
                 cpp_oop_client1
+                cpp_hardware_publisher1
         DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()

@@ -1,2 +1,6 @@
 msg/HardwareStatus.idl
 msg/HardwareStatus.msg
+srv/SampleService.idl
+srv/SampleService.srv
+srv/SampleService_Request.msg
+srv/SampleService_Response.msg

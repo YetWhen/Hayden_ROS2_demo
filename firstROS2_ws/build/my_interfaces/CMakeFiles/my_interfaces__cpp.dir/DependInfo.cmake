@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/hardware_status__builder.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/hardware_status__struct.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
   "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/detail/hardware_status__traits.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/sample_service__builder.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/sample_service__struct.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/sample_service__traits.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
+  "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/sample_service.hpp" "/home/hayden/ROS2_demo/firstROS2_ws/build/my_interfaces/rosidl_generator_cpp/my_interfaces/msg/hardware_status.hpp"
   )
 
 

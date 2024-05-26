@@ -26,6 +26,7 @@ setup(
             "py_server1 = my_python_pkg.py_server:main",
             "py_client1 = my_python_pkg.py_client:main",
             "py_oop_client1 = my_python_pkg.py_oop_client:main",
+            "py_hardware_publisher1 = my_python_pkg.py_hardware_publisher:main",
         ],
     },
 )

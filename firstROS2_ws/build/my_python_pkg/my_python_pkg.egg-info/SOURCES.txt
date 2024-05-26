@@ -11,6 +11,7 @@ setup.py
 my_python_pkg/__init__.py
 my_python_pkg/first_py_node.py
 my_python_pkg/py_client.py
+my_python_pkg/py_hardware_publisher.py
 my_python_pkg/py_oop_client.py
 my_python_pkg/py_publisher.py
 my_python_pkg/py_server.py
