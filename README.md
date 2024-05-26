@@ -33,6 +33,15 @@ eg.
 
 ## firstROS2_ws 
 My learning process following tutorial guides.  
-Contains 2 packages, my_cpp_pkg and my_python_pkg  
-Both include templates of ros2 simple nodes, publisher and subscribers.  
+Contains 4 packages, my_cpp_pkg， my_python_pkg, my_interfaces and my_robot_bringup  
+All the source files/codes are fully functional and can serve as template for further project  
+Topics covered:  
+### my_cpp_pkg & my_python_pkg  
+simple node, topic publisher (with&without oop), topic subscriber (with&without oop), ROS2 service server, ROS2 service client, ROS2 parameters  
+all of the source files can serve as template for further project  
+### my_interfaces  
+customized interfaces for msg & srv  
+### my_robot_bringup  
+calling nodes and configure node parameters via launch file.    
+
 Heavily commented.  
