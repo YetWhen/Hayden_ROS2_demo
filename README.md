@@ -1,11 +1,18 @@
 # Hayden_ROS2_demo  
 A repo for me to record ROS2 learning process and demonstration projects  
+email: YetWhen@gmail.com/Diwen.Ye@unswalumni.com  
 
 created at 2024/05/17  
 # Environment and system setup  
 UBUNTU 22.04  Jammy Jellyfish  
 ROS2 humble  
 builder: ament, colcon  
+ros2 package: urdf_tutorial  
+vscode extensions:  
+&emsp;&emsp;c/c++ (by microsoft)  
+&emsp;&emsp;CMake (by twxs)  
+&emsp;&emsp;Python (by microsoft)  
+&emsp;&emsp;ROS (for urdf xml coding)
 ## basic setup commands  
 The following commands shall be run everytime when a new shell or terminal window is opened.  
 To make the system automatically call these files, you can paste these commands at the end of `~/.bashrc` file  
@@ -45,3 +52,12 @@ customized interfaces for msg & srv
 calling nodes and configure node parameters via launch file.    
 
 Heavily commented.  
+
+## my_robot.urdf
+A simple car with 2 wheels and a caster wheel, can serve as template of urdf file  
+simple way to investigate the urdf file is using urdf_tutorial package  
+`ros2 launch urdf_tutorial display.launch.py model:=address/to/my_robot.urdf `  
+which will call Rviz2 with appropriate configuration  
+details on joint & link type  
+wiki.ros.org/urdf/XML/joint  
+wiki.ros.org/urdf/XML/link
