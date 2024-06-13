@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- the template of specifing the links as urdf file-->
+<robot name="my_robot">
+<!-- this is the basic template, most of codes are implemented between robot brackets-->
+    <!-- declare materials-->
+    <material name="green">
+        <!--red green blue alpha(transparency)-->
+        <color rgba="0 0.5 0 1" />
+    </material>
+    <material name="grey">
+        <color rgba="0.5 0.5 0.5 1" />
+    </material>
+
+    <!-- this is a virtual link used to fix the base_link from dependent motion caused by other link-->
+    <link name="base_footprint"/>
+
+    <link name="base_link">
+        <!--create a robot link, which is a component of the robot-->
+        <visual>
+            <!--visualize the robot component-->
+            <geometry>
+                <!--defining the shape of this object-->
+                <!--size=>"length width height(m)"-->
+                <!-- if an xml object box has no subclass in it, can choose to end with "/>" directly-->
+                <box size="0.6 0.4 0.2"/>
+            </geometry>
+            <!-- typical 6 dof x y z(m) roll pitch yaw(rad)-->
+            <!-- box's origin is the center of box, so add an offset of box's center in CF (GCF in this case)-->
+            <origin xyz="0 0 0.1" rpy="0 0 0" />
+            <!-- use the material declared before-->
+            <material name="green" />
+        </visual>
+    </link>
+
+    <link name="wheelL_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+    <link name="wheelR_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="1.57 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+    <link name="caster_wheel_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.05" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="grey" />
+        </visual>
+    </link>
+
+    <joint name="base_wheelL_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="wheelL_link" />
+        <!-- the origin here is this CF's origin's coordinate in parent object's CF, same is rpy-->
+        <origin xyz="-0.15 0.225 0" rpy="0 0 0" />
+        <!-- for revolute joint, rotation axis and velocity(rad/s) effort limit-->
+        <axis xyz="0 1 0" />
+        <limit effort="100" velocity="100" />
+    </joint>
+
+    <joint name="base_wheelR_joint" type="continuous">
+        <parent link="base_link" />
+        <child link="wheelR_link" />
+        <origin xyz="-0.15 -0.225 0" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+        <limit effort="100" velocity="100" />
+    </joint>
+
+    <!-- we don't actually simulate the caster wheel's motion-->
+    <joint name="base_caster_wheel_joint" type="fixed">
+        <parent link="base_link" />
+        <child link="caster_wheel_link" />
+        <origin xyz="0.2 0 -0.05" rpy="0 0 0" />
+    </joint>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint" />
+        <child link="base_link" />
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+    </joint>
+
+</robot>

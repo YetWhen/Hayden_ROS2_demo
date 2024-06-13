@@ -1,0 +1,41 @@
+[0.058s] Invoking command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake /home/hayden/ROS2_demo/sim_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/sim_ws/install/my_robot_description
+[1.260s] -- The C compiler identification is GNU 11.4.0
+[1.864s] -- The CXX compiler identification is GNU 11.4.0
+[2.029s] -- Detecting C compiler ABI info
+[2.344s] -- Detecting C compiler ABI info - done
+[2.351s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.353s] -- Detecting C compile features
+[2.382s] -- Detecting C compile features - done
+[2.396s] -- Detecting CXX compiler ABI info
+[2.608s] -- Detecting CXX compiler ABI info - done
+[2.620s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.620s] -- Detecting CXX compile features
+[2.621s] -- Detecting CXX compile features - done
+[2.740s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.174s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.736s] -- Configuring done
+[3.739s] -- Generating done
+[3.740s] -- Build files have been written to: /home/hayden/ROS2_demo/sim_ws/build/my_robot_description
+[3.748s] Invoked command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake /home/hayden/ROS2_demo/sim_ws/src/my_robot_description -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/sim_ws/install/my_robot_description
+[3.749s] Invoking command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/sim_ws/build/my_robot_description -- -j6 -l6
+[3.832s] Invoked command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/sim_ws/build/my_robot_description -- -j6 -l6
+[3.928s] Invoking command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/sim_ws/build/my_robot_description
+[3.941s] -- Install configuration: ""
+[3.941s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf
+[3.942s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf
+[3.942s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[3.942s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[3.942s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[3.943s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[3.943s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[3.943s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[3.944s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[3.944s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[3.944s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[3.944s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[3.944s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[3.945s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[3.945s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[3.945s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[3.945s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/package.xml
+[3.947s] Invoked command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/sim_ws/build/my_robot_description
