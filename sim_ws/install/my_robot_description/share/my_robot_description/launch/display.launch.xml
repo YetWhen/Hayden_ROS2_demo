@@ -1,6 +1,6 @@
 <launch>
     <!-- create a variable storing the path to urdf file-->
-    <let name="urdf_path" value="$(find-pkg-share my_robot_description)/urdf/my_robot.urdf" />
+    <let name="urdf_path" value="$(find-pkg-share my_robot_description)/urdf/my_robot.urdf.xacro" />
     <let name="rviz_config_path" value="$(find-pkg-share my_robot_description)/rviz/my_robot_config.rviz" />
     <!-- call the ros2 node with package and executable name, with parameter value set-->
     <!-- var here means that it's referring the variable defined before-->

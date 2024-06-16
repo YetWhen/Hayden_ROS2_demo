@@ -10,7 +10,7 @@ def generate_launch_description():
     #the following line is to search the /share folder path in my_robot_description
     #and join these path, folder name, file name with '/'
     urdf_path=os.path.join(get_package_share_path('my_robot_description'),
-                           'urdf', 'my_robot.urdf')
+                           'urdf', 'my_robot.urdf.xacro')
     rviz_config_path=os.path.join(get_package_share_path('my_robot_description'),
                            'rviz', 'my_robot_config.rviz')
     robot_description = ParameterValue(Command(['xacro ', urdf_path]), value_type=str)
