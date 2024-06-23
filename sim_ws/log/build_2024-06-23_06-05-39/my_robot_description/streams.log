@@ -1,0 +1,29 @@
+[0.015s] Invoking command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/sim_ws/build/my_robot_description -- -j2 -l2
+[0.086s] Invoked command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/sim_ws/build/my_robot_description -- -j2 -l2
+[0.153s] Invoking command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/sim_ws/build/my_robot_description
+[0.165s] -- Install configuration: ""
+[0.165s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf
+[0.165s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+[0.165s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+[0.165s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//launch
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//rviz
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description//rviz/my_robot_config.rviz
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.dsv
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/path.sh
+[0.166s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/environment/path.dsv
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.bash
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.sh
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.zsh
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/local_setup.dsv
+[0.167s] -- Installing: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/package.dsv
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/ament_index/resource_index/packages/my_robot_description
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig.cmake
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/cmake/my_robot_descriptionConfig-version.cmake
+[0.167s] -- Up-to-date: /home/hayden/ROS2_demo/sim_ws/install/my_robot_description/share/my_robot_description/package.xml
+[0.168s] Invoked command in '/home/hayden/ROS2_demo/sim_ws/build/my_robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --install /home/hayden/ROS2_demo/sim_ws/build/my_robot_description

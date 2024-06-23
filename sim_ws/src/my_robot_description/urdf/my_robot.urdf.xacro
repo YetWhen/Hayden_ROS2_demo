@@ -9,4 +9,7 @@
     <!-- mobile_base calls the property in common_properties but didn't include that file in it-->
     <!-- so we need to include common_properties before mobile_base here-->
     <xacro:include filename="mobile_base.xacro" />
+    <!-- the urdf material are appropriate for rviz but not for gazebo
+        so we need to wrap the existing link material with gazebo version material-->
+    <xacro:include filename="mobile_base_gazebo.xacro" />
 </robot>

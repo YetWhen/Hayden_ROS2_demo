@@ -1,12 +1,1 @@
-<?xml version="1.0"?>
-<!-- the template of specifing the links as urdf file-->
-<!-- xmlin:xacro term made the urdf xacro compatible-->
-<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
-<!-- this is the basic template, most of codes are implemented between robot brackets-->
-    
-    <!-- refer to other xacro file, to access their items-->
-    <xacro:include filename="common_properties.xacro" />
-    <!-- mobile_base calls the property in common_properties but didn't include that file in it-->
-    <!-- so we need to include common_properties before mobile_base here-->
-    <xacro:include filename="mobile_base.xacro" />
-</robot>
+/home/hayden/ROS2_demo/sim_ws/src/my_robot_description/urdf/my_robot.urdf.xacro

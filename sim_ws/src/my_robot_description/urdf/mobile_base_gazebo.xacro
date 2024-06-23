@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!--this line will find the link named base_link, 
+        and display that in blue color in gazebo-->
+    <gazebo reference="base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+    <!--similar procedure for all other links-->
+    <gazebo reference="right_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="left_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+    <gazebo reference="caster_wheel_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+</robot>
