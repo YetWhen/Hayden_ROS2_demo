@@ -56,15 +56,25 @@ calling nodes and configure node parameters via launch file.
 
 Heavily commented.  
 
-## my_robot.urdf
+## sim_ws  
+default functionality (as template):  
+Launch robot urdf in gazebo and rviz  
+`ros2 launch my_robot_bringup my_robot_gazebo.launch.xml`  
+It will also Enable the gazebo plugin from gazebo_ros pkg, which is a 2 wheel controller for robot, subscribing the topic `/cmd_vel`  
+To publish a simple topic for debugging  
+`ros2 topic pub /cmd_vel/geometry_msgs/msg/Twist "{linear: {x: 0.5}, angular: {z: 0}}"`  
+To publish topics in node, refer to the publisher examples in firstROS2_ws  
+
+### my_robot.urdf
 A simple car with 2 wheels and a caster wheel, can serve as template of urdf file  
 simple way to investigate the urdf file is using urdf_tutorial package  
 `ros2 launch urdf_tutorial display.launch.py model:=address/to/my_robot.urdf `  
 which will call Rviz2 with appropriate configuration  
-details on joint & link type  
+details on joint & link type:  
 wiki.ros.org/urdf/XML/joint  
 wiki.ros.org/urdf/XML/link
 
-## add gazebo plugins  
+### add gazebo plugins to urdf files  
+examples in `src/my_robot_description/urdf/mobile_base_gazebo.xacro`  
 ros gazebo plugins github (ros-simulation/gazebo_ros_pkgs) ros2 branch  
 gazebo_plugins/inlcude/gazebo_plugins/ folder contains most of the header files for documentation reference  
