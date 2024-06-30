@@ -1,0 +1,20 @@
+<launch>
+    <!-- create a variable storing the path to urdf file-->
+    <let name="urdf_path" value="$(find-pkg-share my_robot_description)/urdf/my_robot.urdf.xacro" />
+    <let name="rviz_config_path" value="$(find-pkg-share my_robot_description)/rviz/my_robot_config.rviz" />
+    <!-- call the ros2 node with package and executable name, with parameter value set-->
+    <!-- var here means that it's referring the variable defined before-->
+    <node pkg="robot_state_publisher" exec="robot_state_publisher">
+        <param name="robot_description" value="$(command 'xacro $(var urdf_path)')" />
+    </node>
+
+    <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
+
+    <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)" />
+</launch>
+
+<!-- this is equavalant to run the following 3 commands in terminal-->
+<!-- 1. ros2 run robot_state_publisher robot_state_publisher ==ros-args -p 
+            robot_description="$(xacro $(find-pkg-share my_robot_description)/urdf/my_robot.urdf)"-->
+<!-- 2. ros2 run joint_state_publisher_gui joint_state_publisher_gui -->
+<!-- 3. ros2 run rviz2 rviz2 -d path/to/my_robot_config.rviz-->

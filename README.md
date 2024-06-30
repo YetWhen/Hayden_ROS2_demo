@@ -21,9 +21,12 @@ To make the system automatically call these files, you can paste these commands 
 ### to access developer tools  
 assuming colcon is installed with default setting  
 `source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash`  
+### to access gazebo  
+'source /usr/share/gazebo/setup.bash`  
 ### to access the firstROS2_ws workspace  
 if ROS2_demo diretory is installed in home diretory, otherwise change ~ to the address to ROS2_demo  
-`source ~/ROS2_demo/firstROS2_ws/install/setup.bash`  
+`source <PATH_TO>/ROS2_demo/firstROS2_ws/install/setup.bash`  
+`firstROS2_ws` can be replaced to the folder name of other workspace  
 ### for c++ ros2 library reference (VSCode user)  
 the #include "<ANY_ROS2_LIBRARY_OR_INTERFACE>" maynot be recognised by IDE gramma check  
 `ctrl`+`shift`+`P` -> search for "C/C++ Edit Configuration JSON"  
@@ -61,3 +64,7 @@ which will call Rviz2 with appropriate configuration
 details on joint & link type  
 wiki.ros.org/urdf/XML/joint  
 wiki.ros.org/urdf/XML/link
+
+## add gazebo plugins  
+ros gazebo plugins github (ros-simulation/gazebo_ros_pkgs) ros2 branch  
+gazebo_plugins/inlcude/gazebo_plugins/ folder contains most of the header files for documentation reference  
