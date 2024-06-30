@@ -15,5 +15,45 @@
     </gazebo>
     <gazebo reference="caster_wheel_link">
         <material>Gazebo/Grey</material>
+        <!-- this is to set the friction coefficient to smaller value-->
+        <mu1 value="0.1" />
+        <mu2 value="0.1" />
+    </gazebo>
+
+    <!-- the following codes are copied and modified from 
+    https://github.com/ros-simulation/gazebo_ros_pkgs/blob/ros2/gazebo_plugins/include/gazebo_plugins/gazebo_ros_diff_drive.hpp-->
+    <gazebo>
+        <!-- <filename> is the file that contains the code for plugins-->
+        <plugin name="diff_drive_control" filename="libgazebo_ros_diff_drive.so">
+
+            <!-- Update rate in Hz -->
+            <update_rate>50</update_rate>
+
+            <!-- wheels -->
+            <!-- use the same name tag as the corresponding joints in robots-->
+            <left_joint>base_left_wheel_joint</left_joint>
+            <right_joint>base_right_wheel_joint</right_joint>
+
+            <!-- kinematics -->
+            <!-- distance between wheels' centers -->
+            <wheel_separation>0.45</wheel_separation>
+            <wheel_diameter>0.2</wheel_diameter>
+
+            <!-- input -->
+            <!-- this will generate a topic cmd_vel for us to publish inputs -->
+            <command_topic>cmd_vel</command_topic>
+
+            <!-- output -->
+            <!-- configure whether publish several information or not -->
+            <publish_odom>true</publish_odom>
+            <publish_odom_tf>true</publish_odom_tf>
+            <publish_wheel_tf>true</publish_wheel_tf>
+            
+            <odometry_topic>odom</odometry_topic>
+            <odometry_frame>odom</odometry_frame>
+            <!-- the root frame TF of robot TF tree -->
+            <robot_base_frame>base_footprint</robot_base_frame>
+
+        </plugin>
     </gazebo>
 </robot>

@@ -17,9 +17,11 @@
 <!-- 1. ros2 run robot_state_publisher robot_state_publisher ==ros-args -p 
             robot_description="$(xacro $(find-pkg-share my_robot_description)/urdf/my_robot.urdf)"-->
 <!-- 2. ros2 run gazebo_ros spawn_entity -topic robot_description -entity my_robot-->
-
+<!-- joint state publisher will block the tf update in Rviz as it publishes to /joint_states directly
+     Rviz subscribes to /joint_states to update its joint position, but gazebo doesn't.
+     joint_state_publisher_gui will hijack the value of /joint_states
     <node pkg="joint_state_publisher_gui" exec="joint_state_publisher_gui" />
-
+-->
     <node pkg="rviz2" exec="rviz2" output="screen" args="-d $(var rviz_config_path)" />
 <!-- 3. ros2 run joint_state_publisher_gui joint_state_publisher_gui -->
 <!-- 4. ros2 run rviz2 rviz2 -d path/to/urdf_config.rviz-->

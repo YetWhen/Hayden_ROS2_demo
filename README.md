@@ -64,3 +64,7 @@ which will call Rviz2 with appropriate configuration
 details on joint & link type  
 wiki.ros.org/urdf/XML/joint  
 wiki.ros.org/urdf/XML/link
+
+## add gazebo plugins  
+ros gazebo plugins github (ros-simulation/gazebo_ros_pkgs) ros2 branch  
+gazebo_plugins/inlcude/gazebo_plugins/ folder contains most of the header files for documentation reference  
