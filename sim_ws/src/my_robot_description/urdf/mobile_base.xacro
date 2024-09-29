@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- not putting name here because it is going to be referred by other urdf files-->
+<!-- not putting robot name here because it is going to be referred by other urdf files-->
 <!-- this file is the configuration of car's model, base& base_footprint& wheels-->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <!-- declare constant by xacro:property-->
@@ -10,7 +10,7 @@
     <xacro:property name="wheel_length" value="0.05" />
 
 
-    <!-- declare function/reusable block by xacrp:macro-->
+    <!-- declare function/reusable block by xacro:macro, with a parameter named "prefix"-->
     <xacro:macro name="wheel_link" params="prefix">
         <link name="${prefix}_wheel_link">
             <visual>
@@ -32,7 +32,7 @@
             <xacro:cylinder_inertia m="1.0" r="${wheel_radius}" h="${wheel_length}" xyz="0 0 0" rpy="${pi/2.0} 0 0" />
         </link>
     </xacro:macro>
-    <!-- this is a virtual link used to fix the base_link from dependent motion caused by other link-->
+    <!-- base_footprint is a virtual link used to fix the base_link from dependent motion caused by other link-->
     <link name="base_footprint"/>
 
     <link name="base_link">

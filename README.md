@@ -12,7 +12,9 @@ vscode extensions:
 &emsp;&emsp;c/c++ (by microsoft)  
 &emsp;&emsp;CMake (by twxs)  
 &emsp;&emsp;Python (by microsoft)  
-&emsp;&emsp;ROS (for urdf xml coding)
+&emsp;&emsp;ROS (for urdf xml coding)  
+for sim_ws>>URDF files, xacro is used and need to be installed by following command:  
+&emsp;&emsp;`sudo apt install ros-<distro>-xacro`
 ## basic setup commands  
 The following commands shall be run everytime when a new shell or terminal window is opened.  
 To make the system automatically call these files, you can paste these commands at the end of `~/.bashrc` file  
@@ -25,6 +27,7 @@ assuming colcon is installed with default setting
 after install ros2, may also need to run  
 `sudo apt install ros-humble-gazebo*` (include the *)  
 Then run the following env source command or add to ~/.bashrc  
+
 `source /usr/share/gazebo/setup.bash`  
 ### to access the firstROS2_ws workspace  
 if ROS2_demo diretory is installed in home diretory, otherwise change ~ to the address to ROS2_demo  
