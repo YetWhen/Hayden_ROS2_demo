@@ -24,6 +24,10 @@ To make the system automatically call these files, you can paste these commands 
 assuming colcon is installed with default setting  
 `source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash`  
 ### to access gazebo  
+after install ros2, may also need to run  
+`sudo apt install ros-humble-gazebo*` (include the *)  
+Then run the following env source command or add to ~/.bashrc  
+
 `source /usr/share/gazebo/setup.bash`  
 ### to access the firstROS2_ws workspace  
 if ROS2_demo diretory is installed in home diretory, otherwise change ~ to the address to ROS2_demo  
