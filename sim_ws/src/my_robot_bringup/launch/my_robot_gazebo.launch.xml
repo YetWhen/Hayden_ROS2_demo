@@ -15,7 +15,7 @@
 
 <!-- this is equavalant to run the following commands in terminal-->
 <!-- 1. ros2 run robot_state_publisher robot_state_publisher ==ros-args -p 
-            robot_description="$(xacro $(find-pkg-share my_robot_description)/urdf/my_robot.urdf)"-->
+            robot_description:="$(xacro $(find-pkg-share my_robot_description)/urdf/my_robot.urdf)"-->
 <!-- 2. ros2 run gazebo_ros spawn_entity -topic robot_description -entity my_robot-->
 <!-- joint state publisher will block the tf update in Rviz as it publishes to /joint_states directly
      Rviz subscribes to /joint_states to update its joint position, but gazebo doesn't.

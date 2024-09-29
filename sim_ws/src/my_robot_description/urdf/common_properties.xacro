@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- not putting name here because it is going to be referred by other urdf files-->
+<!-- not putting robot name here because it is going to be referred by other urdf files-->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <material name="green">
