@@ -6,8 +6,14 @@ created at 2024/05/17
 # Environment and system setup  
 UBUNTU 22.04  Jammy Jellyfish  
 ROS2 humble  
+gimp (for slam map refinement)  
 builder: ament, colcon  
-ros2 package: urdf_tutorial  
+ros2 package: 
+&emsp;&emsp;urdf_tutorial  
+&emsp;&emsp;ros-humble-navigation2  
+&emsp;&emsp;ros-humble-nav2-bringup  
+&emsp;&emsp;ros-humble-turtlebot3* (* -> all turtlebot3 packages)  
+
 vscode extensions:  
 &emsp;&emsp;c/c++ (by microsoft)  
 &emsp;&emsp;CMake (by twxs)  
@@ -27,12 +33,15 @@ assuming colcon is installed with default setting
 after install ros2, may also need to run  
 `sudo apt install ros-humble-gazebo*` (include the *)  
 Then run the following env source command or add to ~/.bashrc  
-
 `source /usr/share/gazebo/setup.bash`  
 ### to access the firstROS2_ws workspace  
 if ROS2_demo diretory is installed in home diretory, otherwise change ~ to the address to ROS2_demo  
 `source <PATH_TO>/ROS2_demo/firstROS2_ws/install/setup.bash`  
 `firstROS2_ws` can be replaced to the folder name of other workspace  
+### for turtlebot3_ws
+use the following command to select which model of turtlebot to use for simulation  
+`export TURTLEBOT3_MODEL=waffle`  
+
 ### for c++ ros2 library reference (VSCode user)  
 the #include "<ANY_ROS2_LIBRARY_OR_INTERFACE>" maynot be recognised by IDE gramma check  
 `ctrl`+`shift`+`P` -> search for "C/C++ Edit Configuration JSON"  
@@ -84,3 +93,42 @@ wiki.ros.org/urdf/XML/link
 examples in `src/my_robot_description/urdf/mobile_base_gazebo.xacro`  
 ros gazebo plugins github (ros-simulation/gazebo_ros_pkgs) ros2 branch  
 gazebo_plugins/inlcude/gazebo_plugins/ folder contains most of the header files for documentation reference  
+
+
+## turtlebot3_ws
+This is a workspace used to practise SLAM packages such as Nav2 and cartographer with turtlebot  
+It clones the turtlebot3_gazebo package into this workspace's src folder and build it here.  
+&emsp;&emsp;This overrides the turtlebot3 package
+&emsp;&emsp;default installation of turtlebot3 package `opt/ros/humble/share/turtlebot3_gazebo` is now the underlay  
+&emsp;&emsp;We create a overlay of it, by modifying it in this ws and use the package in current ws instead  
+
+Online resources, turtlebot3_gazebo github page:  
+https://github.com/ROBOTIS-GIT/turtlebot3_simulations  
+to clone the repo in src folder (turtlebot3_fake, turtlebot3_gazebo and turtlebot3_simulations)  
+`git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git .`  
+the `.` ensures there's no extra "wrapping" folder created  
+Since it's a git repo, remember to checkout to the correct branch based on your ros distro (`git checkout humble-devel` here)  
+Then just get back to ws root folder and `colcon build` to install all the files to install folder  
+
+### Example:  
+#### bring up
+`ros2 launch turtlebot3_gazebo turtlebot3_test_room.launch.py`
+This command spawns the turtlebot robot in the customized world file, which is the `test_room.world`, which can be both found at `src/turtlebot3_gazebo/worlds` (the source directory) or `install/turtlebot3_gazebo/share/turtlebot3_gazebo/worlds` (installation directory)  
+The launch file opens the latter one  
+#### control the robot
+when the launch script is running, call the keyboard controller on another terminal window  
+`ros2 run turtlebot3_teleop teleop_keyboard`  
+#### map generation (slam)
+to bringup the slam program, type the following command in another terminal window  
+`ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True`  
+Since we're using gazebo (simulation), we're publishing the simulation time instead of real one  
+Therefore, set the parameter `use_sim_time:=True`  
+to save the map, use the following command  
+`ros2 run nav2_map_server map_saver_cli -f maps/MAP_NAME`  
+it will generate a .pgm file and a .yaml file  
+#### navigation using the generated map (nav2)  
+`ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=maps/custom_map.yaml`  
+In the beginning, robot's pose is not fixed yet.  
+Use 2D Pose Estimate to place an initial guess for the robot  
+When the robot is navigating, it will adjust and update its pose estimation based on sensor detection.  
+Use Nav2 Goal to select an ending pose, or waypoints, the robot will start to navigate to it.  
