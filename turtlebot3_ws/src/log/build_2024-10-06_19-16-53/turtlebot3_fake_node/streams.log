@@ -1,0 +1,56 @@
+[0.007s] Invoking command in '/home/hayden/ROS2_demo/turtlebot3_ws/src/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake /home/hayden/ROS2_demo/turtlebot3_ws/src/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/turtlebot3_ws/src/install/turtlebot3_fake_node
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.106s] -- The CXX compiler identification is GNU 11.4.0
+[0.110s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.176s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.176s] -- Detecting C compile features
+[0.176s] -- Detecting C compile features - done
+[0.178s] -- Detecting CXX compiler ABI info
+[0.229s] -- Detecting CXX compiler ABI info - done
+[0.233s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.233s] -- Detecting CXX compile features
+[0.233s] -- Detecting CXX compile features - done
+[0.235s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.328s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.378s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.398s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.400s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.404s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.410s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.418s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.437s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.445s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.464s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.465s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.525s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.552s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.576s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.580s] -- Looking for pthread.h
+[0.623s] -- Looking for pthread.h - found
+[0.623s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.670s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.670s] -- Found Threads: TRUE  
+[0.691s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.699s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[0.705s] -- Found tf2_msgs: 0.25.8 (/opt/ros/humble/share/tf2_msgs/cmake)
+[0.729s] -- Configuring incomplete, errors occurred!
+[0.729s] See also "/home/hayden/ROS2_demo/turtlebot3_ws/src/build/turtlebot3_fake_node/CMakeFiles/CMakeOutput.log".
+[0.729s] [31mCMake Error at CMakeLists.txt:25 (find_package):
+[0.729s]   By not providing "Findturtlebot3_msgs.cmake" in CMAKE_MODULE_PATH this
+[0.729s]   project has asked CMake to find a package configuration file provided by
+[0.729s]   "turtlebot3_msgs", but CMake did not find one.
+[0.729s] 
+[0.729s]   Could not find a package configuration file provided by "turtlebot3_msgs"
+[0.729s]   with any of the following names:
+[0.729s] 
+[0.729s]     turtlebot3_msgsConfig.cmake
+[0.729s]     turtlebot3_msgs-config.cmake
+[0.729s] 
+[0.729s]   Add the installation prefix of "turtlebot3_msgs" to CMAKE_PREFIX_PATH or
+[0.729s]   set "turtlebot3_msgs_DIR" to a directory containing one of the above files.
+[0.729s]   If "turtlebot3_msgs" provides a separate development package or SDK, be
+[0.729s]   sure it has been installed.
+[0.729s] 
+[0.729s] [0m
+[0.734s] Invoked command in '/home/hayden/ROS2_demo/turtlebot3_ws/src/build/turtlebot3_fake_node' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake /home/hayden/ROS2_demo/turtlebot3_ws/src/turtlebot3_fake_node -DCMAKE_INSTALL_PREFIX=/home/hayden/ROS2_demo/turtlebot3_ws/src/install/turtlebot3_fake_node

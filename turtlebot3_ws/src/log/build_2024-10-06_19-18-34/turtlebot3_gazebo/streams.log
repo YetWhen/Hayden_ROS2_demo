@@ -1,0 +1,13 @@
+[0.006s] Invoking command in '/home/hayden/ROS2_demo/turtlebot3_ws/src/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hayden/ROS2_demo/firstROS2_ws/install/my_python_pkg:/opt/ros/humble /usr/bin/cmake --build /home/hayden/ROS2_demo/turtlebot3_ws/src/build/turtlebot3_gazebo -- -j28 -l28
+[0.045s] [ 12%] [32mBuilding CXX object CMakeFiles/obstacle1.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc.o[0m
+[0.047s] [ 25%] [32mBuilding CXX object CMakeFiles/turtlebot3_drive.dir/src/turtlebot3_drive.cpp.o[0m
+[0.047s] [ 37%] [32mBuilding CXX object CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc.o[0m
+[0.050s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle2.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc.o[0m
+[5.512s] [ 62%] [32m[1mLinking CXX executable turtlebot3_drive[0m
+[5.554s] [ 75%] [32m[1mLinking CXX shared library libobstacles.so[0m
+[5.556s] [ 87%] [32m[1mLinking CXX shared library libobstacle2.so[0m
+[5.587s] [100%] [32m[1mLinking CXX shared library libobstacle1.so[0m
+[5.679s] [100%] Built target obstacle2
+[5.679s] [100%] Built target obstacles
+[5.720s] [100%] Built target obstacle1
+[5.809s] [100%] Built target turtlebot3_drive
